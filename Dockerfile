@@ -10,7 +10,7 @@ ENV SOLR_VERSION 6.1.0
 
 # Install Java
 RUN add-apt-repository ppa:openjdk-r/ppa
-RUN sudo apt-get update && sudo apt-get install -y openjdk-8-jdk unzip wget
+RUN apt-get update && apt-get install -y openjdk-8-jdk unzip wget
 
 ENV SOLR_USER solr
 ENV SOLR_UID 8983
